@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.cervezas{
+    width: 50%;
+}
+
+.carousel-inner{
+    
+    max-width: 75%;
+    max-height: 80%;
+}
+
+#carouselExampleCaptions{
+    width: 50%;
+}
+.medalla{
+    width: 180px;
+    overflow: visible;
+}
+
+    .copon{
+        text-align: center;
+        width: 800px;
+        height: 800px;
+        background: url("fotos/copon.jpg");
+    }
+    .copon { transition: all 0.8s ease-in-out; }
+
+    .copon:hover  {
+    background: url("fotos/copon-removebg-preview.png") no-repeat;
+    transform: scale(1.5);
+}
+
+.tresd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    margin-bottom: 50px;
+    
+}
+#tilt {
+    display: block;
+    height: 450px;
+    width: 500px;
+    background-color: grey;
+    margin: 25px;
+    transition: box-shadow 0.1s, transform 0.1s;
+    
+    /*
+      * Adding image to the background
+      * No relation to the hover effect.
+      */
+    background-image: url(fotos/prepizza.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  
+  #tilt:hover {
+    box-shadow: 0px 0px 30px rgba(0,0,0, 0.6);
+    cursor: pointer;
+  }
+  header{
+      background-image: url(fotos/web-Grain.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  #carouselExampleCaptions  {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+  }
